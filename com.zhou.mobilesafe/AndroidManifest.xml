@@ -25,6 +25,12 @@
             </intent-filter>
         </activity>
         <activity android:name="com.zhou.mobilesafe.activity.HomeActivity"></activity>
+        <activity android:name="com.zhou.mobilesafe.activity.SettingActivity"></activity>
+        <activity android:name="com.zhou.mobilesafe.activity.LostFindActivity"></activity>
+        <activity android:name="com.zhou.mobilesafe.activity.Setup1Activity"></activity>
+        <activity android:name="com.zhou.mobilesafe.activity.Setup2Activity"></activity>
+        <activity android:name="com.zhou.mobilesafe.activity.Setup3Activity"></activity>
+        <activity android:name="com.zhou.mobilesafe.activity.Setup4Activity"></activity>
     </application>
 
 </manifest>

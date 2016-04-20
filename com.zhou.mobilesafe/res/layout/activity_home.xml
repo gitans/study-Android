@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	
+    <TextView 
+        style="@style/TitleStyle"
+        android:text="功能列表"
+        
+        />
+    <com.zhou.mobilesafe.view.FocusedTextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="欢迎欢迎欢迎，使用手机卫士，老子独立开发哇哈哈哈~~"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        />
+    <GridView 
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:verticalSpacing="30dp"        
+        android:numColumns="3"
+        ></GridView>
+</LinearLayout>
