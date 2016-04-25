@@ -15,25 +15,21 @@
 	    />
 
 	<EditText 
+	    android:id="@+id/et_phone"
 	   	android:layout_width="match_parent"
 	   	android:layout_height="wrap_content"
+	   	android:inputType="phone"
 	   	android:hint="请输入或选择安全号码:"
 	    />
 	
 	<Button 
+	    android:onClick="selectContact"
 	    android:layout_width="match_parent"
 	   	android:layout_height="wrap_content"
 	   	android:background="@drawable/btn_green_selector"
 	   	android:text="请选择联系人"
 	    />
-	<com.zhou.mobilesafe.view.SettingItemView
-	    android:id="@+id/siv_sim"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    zhou:title="点击绑定SIM卡"
-	    zhou:desc_on="SIM卡已经绑定"
-	    zhou:desc_off="SIM卡没有绑定"
-	    />
+
 	
 	<LinearLayout
 	    android:layout_width="match_parent"
@@ -74,7 +70,7 @@
 		    android:layout_height="wrap_content"
 		    android:layout_centerHorizontal="true"
 		    android:layout_centerVertical="true"
-		    android:src="@drawable/bind" />
+		    android:src="@drawable/phone" />
 
 		<Button
 		   style="@style/PreviousStyle"

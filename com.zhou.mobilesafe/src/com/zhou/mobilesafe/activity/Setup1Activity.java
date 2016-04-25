@@ -11,7 +11,7 @@ import com.zhou.mobilesafe.R;
  * @author zhouzuo
  *
  */
-public class Setup1Activity extends Activity {
+public class Setup1Activity extends BaseSetupActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,11 +19,13 @@ public class Setup1Activity extends Activity {
 		setContentView(R.layout.activity_setup1);
 	}
 	
-	//下一页
-	public void next(View v){
+	public void showNextPage(){
 		startActivity(new Intent(this,Setup2Activity.class));
 		finish();
-		//两个界面的切换动画
 		overridePendingTransition(R.anim.tran_in, R.anim.tran_out);//进入和退出动画
+	}
+
+	@Override
+	public void showPreviousPage() {	
 	}
 }

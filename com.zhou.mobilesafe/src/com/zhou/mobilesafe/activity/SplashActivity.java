@@ -326,7 +326,7 @@ public class SplashActivity extends Activity {
 				@Override
 				public void onFailure(HttpException arg0, String arg1) {
 					Toast.makeText(SplashActivity.this, "œ¬‘ÿ ß∞‹", 0).show();
-					
+					enterHome();
 				}
 			});
 		}else{
